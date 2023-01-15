@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="mystyle.css">
+<nav>
+    <ul>
+    <li><a href="vol2.html">Portofolie informatik</a></li>
+    <li><a href="info.html">Info</a></li>
+    <li><a href="astropiporto.html">Astro-pi</a></li>
+    <li><a href="portofolie%202.html">It sikkerhed</a></li>
+    </ul>
+    
+    </nav>   
+<br>
+<center>
+<h2>ASTRO-PI PORTOFOLIE</h2>   
+    </center>
+</head>
+<body> 
+    <h4>Projektbeskrivelse</h4>
+    <p>Vi forsøgte at bevise at månens afstand fra jorden er med til at påvirke tidevandet.
+Vi vil bevise dette ved at tage udgangspunkt i, at den satellit, der er tættest på månen, er længere væk fra jorden end den satellit, der er længst væk fra månen, fordi den påvirkes af månen og dermed af tidevandskraften.
+Vi vil bevise dette ved at tage billede fra begge satellitter og vise, at den første satellits billede er mindre end den anden satellits billede. Vi ved at, hvis et bilede er større, må det betyde at kameraet er tættere på den genstand der er taget et billede af.</p>
+    <br>
+    <h4>Beskrivelse af testmåling af sensor</h4>
+    <p>Vi brugte senseHat til at importerer data og koordinater fra ISS. Vi bruger koderne: from skyfield.api import load, import numpy as np, from numpy import sin, cos, arccos, sqrt, arcsin, from orbit import ISS. Disse koder bruges til at få adgang til python biblioteker og matematiske funktioner, som sammen med sensoren kan udregne vinklen mellem ISS og månen.</p>
+    <br>
+    <h4>ESA kravspecifikationer</h4>
+    <p>ESA specifiktioner for projektet kræver at det skal være et videnskabeligt projekt og ikke et spil, at forsøget ikke må afhænge af en specifik begivenhed og at forsøget ikke må kræve yderliger udstyr eller andet på ISS. Eftersom vores projekt undersøger et videnskabeligt fænomen, ikke afhænger af en specifik begivenhed eller kræver uderlig adgang eller udstyr på ISS, må vores projekt leve op til ESA's specifikationer.</p>
+    <br>
+    <h4>Relevante kodestumper</h4>
+    <img src="kodestump.png">
+    <p>Her beskrives ISS's lokalition som koordinaterne for ISS. ISS lokalition printes i form af længegrader og breddegrader.</p>
+    <br>
+    <h4>Flowchart</h4> 
+    <img src="flowchart%201.png" width="40%">
+    <p>Billedet til ovenfor er et flowchart vi har lavet for vores programkode. Vi starter med boksen "start", derefter er det den næste kode kaldet "Import data fra ISS", det er den der importerer det data vi skal bruge til vores undersøgelse. Vores næste boks står for den astronauntiske måde for at finde alle planeterne. Dernæst får vi koden til at give os distancen mellem de planeter vi vil undersøge, som hænger sammen med boksen nedenunder. Tilsidst får vi printet vinklerne så vi kan finde de sidste informationer vi skal bruge til at understøtte hele vores undersøgelse. Vi slutter flowchartet af med en boks kaldet "slut"</p>
+    <a href="moon.py">Vores pogramkode</a>
+    <br>
+</body>    
+</html>
